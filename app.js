@@ -7,7 +7,7 @@ http.createServer(function(req,res){
     let form = new formidable.IncomingForm();
     form.parse(req,function( err, fields, files){
       let oldpath = files.fileupload.filepath;
-      //let oldpath = files.fileupload.filepath;
+      //let oldpath = files.fileupload.filepath; 
       
       //let newpath = 'D:/Github/NodeJS/img/'+ files.fileupload.name;
       let newpath = 'C:/Github/NodeJS/img/'+ files.fileupload.name + '.jpg';
